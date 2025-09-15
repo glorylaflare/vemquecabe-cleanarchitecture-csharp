@@ -1,0 +1,124 @@
+# Build results
+/bin/
+# Ignora bin/ e obj/ em qualquer subpasta
+**/bin/
+**/obj/
+/obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.DotSettings.user
+# VS, Rider, arquivos temporários
+.vs/
+.idea/
+*.sln.iml
+*.dbmdl
+*.aps
+*.ncb
+*.opendb
+*.opensdf
+*.sdf
+*.cache
+*.bak
+*.backup
+*.orig
+*.rej
+*.swo
+*.swn
+*.tmp
+*.log
+*.vspscc
+*.vssscc
+*.scc
+*.vsscc
+*.sln.docstates
+
+# NuGet packages
+/packages/
+# NuGet restore
+*.snupkg
+project.lock.json
+project.fragment.lock.json
+artifacts/
+**/artifacts/
+*.nupkg
+project.assets.json
+project.nuget.cache
+project.packagespec.json
+*.nuget.dgspec.json
+*.nuget.g.props
+*.nuget.g.targets
+*.csproj.EntityFrameworkCore.targets
+# NuGet restore
+_ReSharper*/
+*.vspscc
+*.vssscc
+
+# Rider específico
+rider.project.model.nuget.info
+rider.project.restore.info
+
+# Visual Studio Code
+.vscode/
+
+# Visual Studio
+.vs/
+
+# Logs
+*.log
+
+# Database
+*.mdf
+*.ldf
+
+# Others
+*.dbmdl
+*.pdb
+*.cache
+*.config
+
+# Configuration files with sensitive data
+appsettings.Development.json
+.env
+.env.local
+.env.development
+.env.production
+
+# TestResults
+TestResults/
+**/TestResults/
+*.coverage
+*.coveragexml
+*.testsettings
+*.vsmdi
+*.psess
+*.vsp
+*.vspx
+*.sap
+*.ide
+
+# Mutation Testing (Stryker)
+**/StrykerOutput/
+
+# Code Quality Analysis
+qodana.sarif.json
+*.sarif
+*.sarif.json
+
+# Web
+wwwroot/lib/
+
+# Migrations 
+Migrations/
+**/Migrations/
+
+# Docker
+.dockerignore
+
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.~*

@@ -1,0 +1,46 @@
+﻿/* Topbar */
+.swagger-ui .topbar {
+    background-color: #1E1E2F !important; /* cor de fundo */
+    padding: 10px 20px;
+}
+
+    /* Logo */
+    .swagger-ui .topbar a span {
+        color: #FFD700 !important;
+        font-weight: bold;
+        font-size: 24px;
+    }
+
+/* Título da API */
+.swagger-ui .info .title {
+    color: #00BCD4;
+    font-size: 42px;
+    font-weight: bold;
+}
+
+/* Descrição */
+.swagger-ui .info .description {
+    color: #CCCCCC;
+    font-size: 16px;
+}
+
+/* Botão de tentar API (Try it out) */
+.swagger-ui .btn.authorize {
+    background-color: #1E1E2F;
+    color: white;
+}
+
+.swagger-ui .scheme-container {
+    background-color: transparent;
+}
+
+/* Cabeçalhos das seções */
+.swagger-ui .opblock-summary-method {
+    font-weight: bold;
+}
+
+/* Esconder elementos desnecessários (exemplo: footer) */
+.swagger-ui .swagger-ui .info .base-url,
+.swagger-ui .swagger-ui .download-url-wrapper {
+    display: none;
+}

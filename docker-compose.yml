@@ -1,0 +1,47 @@
+version: '3.8'
+
+services:
+  vemquecabe_api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: vemquecabe_api
+    ports:
+      - "5000:8080"
+    environment:
+      - ConnectionStrings__DefaultConnection=Server=vemquecabe_sql,1433;Database=VemQueCabe_Prod;User ID=sa;Password=SenhaForte123!;Trusted_Connection=False;TrustServerCertificate=True;
+      - Redis__ConnectionString=vemquecabe_redis:6379,abortConnect=false
+      - ENABLE_SWAGGER=true
+    depends_on:
+      - vemquecabe_redis
+      - vemquecabe_sql
+    networks:
+      - vemquecabe_network
+  
+  vemquecabe_redis:
+    image: "redis:7.2-alpine"
+    container_name: vemquecabe_redis
+    ports:
+      - "6379:6379"
+    networks:
+      - vemquecabe_network
+  
+  vemquecabe_sql:
+    image: "mcr.microsoft.com/mssql/server:2022-latest"
+    container_name: vemquecabe_sql
+    environment:
+      MSSQL_SA_PASSWORD: "SenhaForte123!"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1433:1433"
+    volumes:
+      - sqlserverdata:/var/opt/mssql
+    networks:
+      - vemquecabe_network
+    
+networks:
+  vemquecabe_network:
+    driver: bridge
+
+volumes:
+  sqlserverdata:
