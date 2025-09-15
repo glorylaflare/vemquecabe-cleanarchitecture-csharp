@@ -342,6 +342,9 @@ https://localhost:7xxx/swagger
 ### **Design Patterns**
 - **Repository Pattern** - Abstração do acesso a dados (implícito no Entity Framework)
 - **Unit of Work Pattern** - Controle de transações e contexto
+- **Factory Pattern** - Criação de objetos sem expor a lógica de instância
+- **Singleton Pattern** - Instância única para serviços compartilhados
+- **Result Pattern** - Tratamento consistente de erros e resultados
 - **Dependency Injection** - Inversão de controle e desacoplamento
 - **DTO Pattern** - Transferência de dados entre camadas
 - **Middleware Pattern** - Pipeline de processamento de requisições
@@ -366,9 +369,7 @@ https://localhost:7xxx/swagger
 - Flexibilidade para mudanças e evolução
 
 ### **Metodologias de Desenvolvimento**
-- **Test-Driven Development (TDD)** - Desenvolvimento orientado por testes
 - **Mutation Testing** - Validação da qualidade dos testes com Stryker
-- **Integration Testing** - Testes de integração com ASP.NET Core Testing
 - **Mocking** - Isolamento de dependências em testes
 
 ## Testes
@@ -377,7 +378,6 @@ O projeto inclui uma suíte completa de testes organizados por camadas:
 
 ### **Estrutura de Testes**
 - **Testes Unitários** - Validação de lógica de negócio isolada
-- **Testes de Integração** - Validação de fluxos completos da API
 - **Testes de Domínio** - Validação de entidades e value objects
 - **Mutation Testing** - Verificação da qualidade dos testes
 
@@ -386,11 +386,6 @@ O projeto inclui uma suíte completa de testes organizados por camadas:
 **Todos os testes:**
 ```bash
 dotnet test
-```
-
-**Com cobertura de código:**
-```bash
-dotnet test --collect:"XPlat Code Coverage"
 ```
 
 **Mutation testing (Stryker):**
@@ -429,6 +424,7 @@ dotnet stryker
 - [Como usar Redis na sua solução .NET](https://dev.to/lukesilva/como-usar-redis-na-sua-solucao-net-3b0d)
 - [The Result Pattern in C#: A Smarter Way to Handle Errors](https://medium.com/@aseem2372005/the-result-pattern-in-c-a-smarter-way-to-handle-errors-c6dee28a0ef0)
 - [Simplifique o controle de erros com o Result Pattern no .NET](https://pathbit.medium.com/simplifique-o-controle-de-erros-com-o-result-pattern-no-net-bf35a0cd1b14)
+- [ASP.NET Core API DDD SOLID](https://github.com/jeangatto/ASP.NET-Core-API-DDD-SOLID)
 
 ---
 
