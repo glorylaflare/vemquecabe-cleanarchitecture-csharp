@@ -17,7 +17,7 @@ public static class AuthenticationCollectionExtensions
     /// <returns></returns>
     public static IServiceCollection AddAuthenticationServices(this IServiceCollection services, IConfiguration configuration)
     {
-        var secret = Encoding.UTF8.GetBytes(configuration["JWT:Secret"]);
+        var secret = Encoding.UTF8.GetBytes(configuration["JWT:Secret"]!);
 
         services.AddAuthentication(options => 
         {
