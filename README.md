@@ -207,8 +207,8 @@ O projeto inclui uma configuração completa com Docker Compose que configura au
 
 1. **Clone o repositório**
    ```bash
-   git clone <url-do-repositorio>
-   cd projeto-secreto
+   git clone https://github.com/glorylaflare/vemquecabe-cleanarchitecture-csharp
+   cd vemquecabe-cleanarchitecture-csharp
    ```
 
 2. **Execute com Docker Compose**
@@ -258,8 +258,8 @@ Para desenvolvimento local ou caso prefira não usar Docker.
 
 1. **Clone o repositório**
    ```bash
-   git clone <url-do-repositorio>
-   cd projeto-secreto
+   git clone https://github.com/glorylaflare/vemquecabe-cleanarchitecture-csharp
+   cd vemquecabe-cleanarchitecture-csharp
    ```
 
 2. **Restaure as dependências**
